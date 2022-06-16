@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		F5AE4383285AC84700057ACB /* Peter003_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AE4382285AC84700057ACB /* Peter003_1App.swift */; };
-		F5AE4385285AC84700057ACB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AE4384285AC84700057ACB /* ContentView.swift */; };
 		F5AE4387285AC84C00057ACB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5AE4386285AC84C00057ACB /* Assets.xcassets */; };
 		F5AE438A285AC84D00057ACB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5AE4389285AC84D00057ACB /* Preview Assets.xcassets */; };
 		F5AE4394285AC84D00057ACB /* Peter003_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AE4393285AC84D00057ACB /* Peter003_1Tests.swift */; };
 		F5AE439E285AC84D00057ACB /* Peter003_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AE439D285AC84D00057ACB /* Peter003_1UITests.swift */; };
 		F5AE43A0285AC84D00057ACB /* Peter003_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AE439F285AC84D00057ACB /* Peter003_1UITestsLaunchTests.swift */; };
+		F5AE43AD285ACE4500057ACB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5AE43AC285ACE4500057ACB /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		F5AE437F285AC84700057ACB /* Peter003_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peter003_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5AE4382285AC84700057ACB /* Peter003_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peter003_1App.swift; sourceTree = "<group>"; };
-		F5AE4384285AC84700057ACB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F5AE4386285AC84C00057ACB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5AE4389285AC84D00057ACB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F5AE438F285AC84D00057ACB /* Peter003_1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Peter003_1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +43,7 @@
 		F5AE4399285AC84D00057ACB /* Peter003_1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Peter003_1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5AE439D285AC84D00057ACB /* Peter003_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peter003_1UITests.swift; sourceTree = "<group>"; };
 		F5AE439F285AC84D00057ACB /* Peter003_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peter003_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F5AE43AC285ACE4500057ACB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				F5AE4382285AC84700057ACB /* Peter003_1App.swift */,
-				F5AE4384285AC84700057ACB /* ContentView.swift */,
+				F5AE43AC285ACE4500057ACB /* HomeView.swift */,
 				F5AE4386285AC84C00057ACB /* Assets.xcassets */,
 				F5AE4388285AC84D00057ACB /* Preview Content */,
 			);
@@ -257,7 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5AE4385285AC84700057ACB /* ContentView.swift in Sources */,
+				F5AE43AD285ACE4500057ACB /* HomeView.swift in Sources */,
 				F5AE4383285AC84700057ACB /* Peter003_1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,15 +425,16 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ddong.Peter003-1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Peter003_1;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -454,15 +455,16 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ddong.Peter003-1";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Peter003_1;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

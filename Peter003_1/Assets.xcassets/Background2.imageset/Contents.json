@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "458PICU58PIC0CT84fbeI958PIC4y_PIC2018.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
