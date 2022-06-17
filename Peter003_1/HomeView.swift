@@ -40,9 +40,11 @@ class HomeViewModel: ObservableObject {
             question1, question2, question3, question4, question5,
             question6, question7, question8, question9, question10
         ])
+        print("打亂前 :  \(question)")
         
         // 打亂陣列順序
         self.question.shuffle()
+        print("打亂後: \(question)")
     }
 }
 
@@ -202,7 +204,8 @@ extension HomeView{
 
             Button {
                 // 重新開始 的 動作
-                viewModel.getQuestion() // 重新取得 題庫 (順序也會重新打亂)
+                self.viewModel.question = [] // 要先清空
+                self.viewModel.getQuestion() // 重新取得 題庫 (順序也會重新打亂)
                 self.viewModel.number = 1 // 題號回到第一題
                 self.viewModel.show = false  // 答案隱藏
             } label: {
